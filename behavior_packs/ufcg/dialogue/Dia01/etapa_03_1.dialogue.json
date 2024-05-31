@@ -1,0 +1,115 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "dia01_et02_Tx01",
+        "npc_name": "Estudante",
+        "text": "E aí! Tudo certo?",
+        "buttons": [
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=feirante_1] @s dia01_et02_Tx02"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx02",
+        "npc_name": "Feirante Clodoaldo",
+        "text": "Oi, jovem! Tô aqui na luta, mas essa barraca não tá colaborando...",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et02_Tx01"]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @initiator @initiator dia01_et02_Tx03"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx03",
+        "npc_name": "Estudante",
+        "text": "Posso te dar uma mãozinha. O que precisa ser feito?",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": [
+              "/dialogue open @e[name=feirante_1] @s dia01_et02_Tx02"
+            ]
+          },
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=feirante_1] @s dia01_et02_Tx04"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx04",
+        "npc_name": "Feirante Clodoaldo",
+        "text": "Eita valeu! Preciso de um apoio para minha mesa... Me ajuda?",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et02_Tx03"]
+          },
+          {
+            "name": "Proximo",
+            "commands": ["/dialogue open @initiator @initiator dia01_et02_Tx05"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx05",
+        "npc_name": "Estudante",
+        "text": "Claro, sem problemas!",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": [
+              "/dialogue open @e[name=feirante_1] @s dia01_et02_Tx04"
+            ]
+          },
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=feirante_1] @s dia01_et02_Tx06"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx06",
+        "npc_name": "Feirante Clodoaldo",
+        "text": "Preciso que você crie na bancada de trabalho uma cerca com aqueles materiais que estão dentro do baú ao lado. Depois de feita me entregue para que eu possa melhorar a minha barraca!",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et02_Tx05"]
+          },
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=feirante_1] @initiator dia01_et02_Tx07"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx07",
+        "npc_name": "Feirante Clodoaldo",
+        "text": "Muito obrigado! Toma aqui um lanche de agradecimento!",
+        "buttons": [
+          {
+            "name": "Finalizar"
+          }
+        ]
+      }
+    ]
+  }
+}

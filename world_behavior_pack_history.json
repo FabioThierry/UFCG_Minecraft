@@ -1,0 +1,10 @@
+{
+    "packs": [
+        {
+            "can_be_redownloaded": false,
+            "name": "UFCG Pacote de comportamento",
+            "uuid": "b3d1661a-06cf-49cc-b05e-480433aa21e9",
+            "version": [1, 0, 0]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "UFCG Pacote de recursos",
+    "description": "Pacote de recursos",
+    "uuid": "18a77556-b84f-478c-a1aa-17b5599dbc1a",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 10]
+  },
+  "modules": [
+    {
+      "description": "UFCG pacote de recursos",
+      "type": "resources",
+      "uuid": "3bc69e29-fc31-486f-9126-aae82ae47076",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "b3d1661a-06cf-49cc-b05e-480433aa21e9",
+      "version": [1, 0, 0]
+    }
+  ]
+}

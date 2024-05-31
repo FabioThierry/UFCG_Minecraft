@@ -1,0 +1,24 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "UFCG Pacote de comportamento",
+    "description": "pacote de comportamento",
+    "uuid": "b3d1661a-06cf-49cc-b05e-480433aa21e9",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 10]
+  },
+  "modules": [
+    {
+      "description": "My First Add-On!",
+      "type": "data",
+      "uuid": "96690c1f-cb61-4fcd-9366-f9d33a0368e2",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "18a77556-b84f-478c-a1aa-17b5599dbc1a",
+      "version": [1, 0, 0]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "dia01_et02_Tx01",
+        "npc_name": "Estudante",
+        "text": "Oi, professor! Tudo bem?\n\nÉ que eu tô chegando agora e preciso encontrar o bloco pra fazer a matrícula... pode me dar uma ajuda?",
+        "buttons": [
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @s dia01_et02_Tx02"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx02",
+        "npc_name": "Professor Alberto",
+        "text": "Claro, jovem! Você vai seguir reto até o final da rua, lá você vai ver o §6Bloco de Humanidades§r, é um prédio grande, depois vira à direita para chegar até a entrada.",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et02_Tx01"]
+          },
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @initiator dia01_et02_Tx03"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx03",
+        "npc_name": "Professor Alberto",
+        "text": "Durante o trajeto você vai passar na §6Feira Agroecológica§r, recomendo dar uma paradinha lá.",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @initiator dia01_et02_Tx02"
+            ]
+          },
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @initiator dia01_et02_Tx04"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx04",
+        "npc_name": "Professor Alberto",
+        "text": "Ah, e aqui está um §2mapa§r do campus para facilitar sua vida. Você sabe ler um §2mapa§r?",
+        "buttons": [
+          {
+            "name": "Eu sei",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @initiator dia01_et02_Tx05"
+            ]
+          },
+          {
+            "name": "Não",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @initiator dia01_et02_Tx05"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx05",
+        "npc_name": "Professor Alberto",
+        "text": "Existem alguns cursos aqui que oferecem o aprofundamento desses conhecimentos, como o próprio curso de §1Geografia§r, §1Meteorologia§r, §1Arquitetura§r e §1Urbanismo§r e as §1Engenharias§r...\nNesses cursos existem disciplinas que vão ensinar sobre §ccartografia§r, §cgeoprocessamento§r, §csistemas de informação geográficas§r, §csensoriamento remoto§r e entre outros.\n",
+        "buttons": [
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @initiator dia01_et02_Tx06"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx06",
+        "npc_name": "Professor Alberto",
+        "text": "Tem um logo alí que colocaram lá atrás da §6Portaria§r.\n\nMas veja que esse §2mapa§r está apenas no mundo virtual, na realidade o buraco é mais embaixo! Ainda existem algumas demandas para melhor informar quem chega na §1UFCG§r.",
+        "buttons": [
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @initiator @initiator dia01_et02_Tx07"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx07",
+        "npc_name": "Estudante",
+        "text": "Valeu, professor! Obrigado(a) mesmo pela ajuda!",
+        "buttons": [
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @s dia01_et02_Tx08"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et02_Tx08",
+        "npc_name": "Professor Alberto",
+        "text": "Não há de quê. Boa sorte e aproveite sua jornada na §1UFCG§r! Não se esqueça de pegar o seu §2mapa§r e parar na §6feirinha§r.",
+        "buttons": [
+          {
+            "name": "Beleza",
+            "commands": [
+              "/tag @initiator add dia01_et02_Tx08_finalizado",
+              "/function genericos/som_iniciar_missao",
+              "/tag @initiator remove dia01_et01_caminho",
+              "/tag @initiator add dia01_et02_caminho"
+            ]
+          },
+          {
+            "name": "Saber mais",
+            "commands": [
+              "/dialogue open @e[name=professor_A1] @initiator dia01_et02_Tx05"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

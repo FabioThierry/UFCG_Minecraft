@@ -1,0 +1,48 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "guarda_scene",
+        "npc_name": "Guarda Pedro",
+        "text": "Olá, meu nome é Pedro! Eu trabalho como guarda nessa guarita. \n\nVocê é novo por aqui?\n",
+        "buttons": [
+          {
+            "name": "Sim",
+            "commands": [
+              "/dialogue open @s @initiator guarda_scene_2",
+              "/tag @initiator conhece_ufcg"
+            ]
+          },
+          {
+            "name": "Não",
+            "commands": [
+              "/dialogue open @s @initiator guarda_scene_3",
+              "/tag @initiator nao_conhece_ufcg"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "guarda_scene_2",
+        "npc_name": "Guarda Pedro",
+        "text": "Que legal, que bom que você conhece um pouco da Universidade!\n\nMas se ainda não estiver muito familiarizado, mais a frente você verá um mapa no qual poderá se utilizar para localizar-se na Universidade!",
+        "buttons": [
+          {
+            "name": "Valeu!"
+          }
+        ]
+      },
+      {
+        "scene_tag": "guarda_scene_3",
+        "npc_name": "Guarda Pedro",
+        "text": "Que pena!\n\nMais a frente você verá um mapa no qual poderá se utilizar para localizar-se na Universidade!",
+        "buttons": [
+          {
+            "name": "OK Obrigado!"
+          }
+        ]
+      }
+    ]
+  }
+}

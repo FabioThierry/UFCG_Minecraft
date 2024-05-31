@@ -1,0 +1,10 @@
+{
+    "packs": [
+        {
+            "can_be_redownloaded": false,
+            "name": "UFCG Pacote de recursos",
+            "uuid": "18a77556-b84f-478c-a1aa-17b5599dbc1a",
+            "version": [1, 0, 0]
+        }
+    ]
+}

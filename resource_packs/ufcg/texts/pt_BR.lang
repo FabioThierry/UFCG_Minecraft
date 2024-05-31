@@ -1,0 +1,16 @@
+## Nomes Personagens
+estudante.nome=Estudante
+motorista.nome=Motorista Carlos
+
+## DIA 01
+
+## || Diálogo Etapa 01
+
+estudante.dialogo.ET01.OR1=E aí, motorista! Beleza?
+motorista.dialogo.ET01.0R2=Oi, jovem! Tudo tranquilo!
+estudante.dialogo.ET01.OR3=Pode me dizer se é aqui a parada da UFCG?
+motorista.dialogo.ET01.0R4=Sim, jovem! Aqui é o ponto final. Aproveite sua jornada na universidade!
+estudante.dialogo.ET01.OR5=Valeu mesmo, motorista! Obrigado pela ajuda!
+motorista.dialogo.ET01.0R6=Disponha. Boa sorte e se precisar de mais alguma coisa, tamo aí!
+
+## || Diálogo Etapa 02

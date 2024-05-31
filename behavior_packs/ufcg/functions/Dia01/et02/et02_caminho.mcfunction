@@ -1,0 +1,11 @@
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -67 68 238
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -70 67.6 235
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -72 67.6 233
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -74 67.6 231
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -77 67.6 228
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -80 67 228
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -83 67.6 228
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -85 66.6 226
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -88 66.6 223
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -90 67 221
+execute at @a[tag=dia01_et02_caminho] run particle minecraft:endrod -92 66.6 219

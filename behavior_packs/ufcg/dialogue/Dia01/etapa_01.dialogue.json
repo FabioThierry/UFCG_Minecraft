@@ -1,0 +1,63 @@
+{
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "dia01_et01_Tx01",
+        "npc_name": "Estudante",
+        "text": "\nPode me dizer se é aqui a parada da UFCG?",
+        "buttons": [
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @e[name=motorista] @s dia01_et01_Tx02"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et01_Tx02",
+        "npc_name": "Motorista Carlos",
+        "text": "Tudo Beleza! Aqui é o ponto final. \n\nAproveite sua jornada na universidade!",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et01_Tx01"]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @initiator @initiator dia01_et01_Tx03"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et01_Tx03",
+        "npc_name": "Estudante",
+        "text": "Valeu mesmo, motorista! \n\nObrigado(a) pela ajuda!",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @e[name=motorista] @s dia01_et01_Tx02"]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @e[name=motorista] @s dia01_et01_Tx04"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et01_Tx04",
+        "npc_name": "Motorista Carlos",
+        "text": "Disponha... \n\nBoa sorte e se precisar de mais alguma coisa, tamo aí!",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": [
+              "/tag @initiator add dia01_et01_Tx04_finalizado",
+              "/tag @initiator add dia01_et01_caminho",
+              "/function genericos/som_iniciar_missao"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
