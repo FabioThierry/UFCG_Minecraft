@@ -1,0 +1,103 @@
+{
+	"format_version": "1.14.0",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "dia01_et09_Tx01",
+				"npc_name": "Estudante",
+				"text": "Sim! sem problemas!\n\nEu sou um futuro estudante de Licenciatura em Geografia!",
+				"buttons": [
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx02"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et09_Tx02",
+				"npc_name": "Repórte Fátima",
+				"text": "Estamos fazendo algumas perguntas para saber da experiência do primeiro dia de matrículas na universidade! ",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx01"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx03"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et09_Tx03",
+				"npc_name": "Estudante",
+				"text": "Por enquanto foi tudo tranquilo, porém quando durante o trajeto dentro da cidade para chegar aqui teve um trânsito pesado, devido aos alagamentos ocorridos pela última chuva!",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx02"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx04"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et09_Tx04",
+				"npc_name": "Repórte Fátima",
+				"text": "Verdade, muitos problemas ocorridos na cidade devido a esse clima!",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx03"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx05"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et09_Tx05",
+				"npc_name": "Estudante",
+				"text": "Clima não! mas sim o Tempo! Existe uma grande diferença entre os dois!",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx04"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx06"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et09_Tx06",
+				"npc_name": "Repórte Fátima",
+				"text": "Eita, você nem começou as aulas e já sabe bastante de Geografia, vou ter que estudar mais para minhas próximas entrevistas!",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx05"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et09_Tx07"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et09_Tx07",
+				"npc_name": "Estudante",
+				"text": "Ok! sem problemas, agora eu vou precisar ir embora pegar o meu ônibus e ir de volta para minha cidade!",
+				"buttons": [
+					{
+						"name": "Finalizar"
+					}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"format_version": "1.14.0",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "dia01_et07_Tx01",
+				"npc_name": "Estudante",
+				"text": "Olá, gostaria de tirar uma cópia do meu RDM!",
+				"buttons": [
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et07_Tx02"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et07_Tx02",
+				"npc_name": "Marcos da Xerox",
+				"text": "Que bom que está voltando o período de aulas, agora o movimento vai ficar bem mais intenso comparado ao período de férias! Porém, mesmo com o aumento do fluxo de pessoas a quantidade de cópias não é mais a mesma comparada a alguns anos atrás! \n\nO digital está cada vez mais tomando conta!\n",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et07_Tx01"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et07_Tx03"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et07_Tx03",
+				"npc_name": "Marcos da Xerox",
+				"text": "Aqui está a sua cópia! Se você for tirar a carteirinha de estudante o DCE fica localizado no andar superior do Restaurante Universitário!",
+				"buttons": [
+					{
+						"name": "Finalizar"
+					}
+				]
+			}
+		]
+	}
+}

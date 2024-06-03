@@ -1,0 +1,88 @@
+{
+	"format_version": "1.14.0",
+	"minecraft:npc_dialogue": {
+		"scenes": [
+			{
+				"scene_tag": "dia01_et08_Tx01",
+				"npc_name": "Estudante",
+				"text": "Bom dia! Trouxe sim aqui está o RG, CPF e o RDM.",
+				"buttons": [
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx02"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et08_Tx02",
+				"npc_name": "Larissa - DCE",
+				"text": "Ótimo, só um minuto…",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx01"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx03"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et08_Tx03",
+				"npc_name": "Estudante",
+				"text": "Quando fui realizar a matrícula, a secretária Maria do Centro de Humanidades me informou que eu poderia realizar esse processo aqui. Mas uns dias antes no jornal mostrou que na integração também estava sendo feita a carteira de estudante. \n\nPor acaso existe algum vínculo?\n",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx02"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx04"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et08_Tx04",
+				"npc_name": "Larissa - DCE",
+				"text": "Sim, nós do DCE temos uma parceria com a prefeitura onde eles nos emprestam algumas máquinas e a partir daí nós reduzimos os custos de produção saindo bem mais barata. \n\nO dinheiro arrecadado vai ser distribuído para pagar o uso das máquinas e a outra parte vai ser convertida em fundos para que a gente consiga manter o DCE funcionando.  \n",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx03"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx05"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et08_Tx05",
+				"npc_name": "Estudante",
+				"text": "Que legal eu não sabia como funcionava.",
+				"buttons": [
+					{
+						"name": "Anterior",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx04"]
+					},
+					{
+						"name": "Próximo",
+						"commands": ["/dialogue open @s @initiator dia01_et08_Tx06"]
+					}
+				]
+			},
+			{
+				"scene_tag": "dia01_et08_Tx06",
+				"npc_name": "Larissa - DCE",
+				"text": "Aqui está a sua carteira.",
+				"buttons": [
+					{
+						"name": "Obrigado (a)"
+					}
+				]
+			}
+		]
+	}
+}

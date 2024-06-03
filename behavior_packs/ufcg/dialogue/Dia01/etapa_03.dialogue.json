@@ -86,7 +86,8 @@
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=feirante_1] @s dia01_et03_Tx06"
+							"/execute as @initiator if entity @s[tag=!maca] run /dialogue open @e[name=feirante_1] @s dia01_et03_Tx06",
+							"/execute as @initiator if entity @s[tag=maca] run /dialogue open @e[name=feirante_1] @s dia01_et03_Tx07"
 						]
 					}
 				]
@@ -106,7 +107,9 @@
 						"name": "Próximo",
 						"commands": [
 							"/execute as @initiator if entity @s[hasitem={item=fence,quantity=2..}] run dialogue open @e[name=feirante_1] @s dia01_et03_Tx07",
-							"/clear @initiator[hasitem={item=fence,quantity=2..}] fence 0 2"
+							"/clear @initiator[hasitem={item=fence,quantity=2..}] fence 0 2",
+							"/tag @initiator add maca",
+							"/give @initiator apple 2"
 						]
 					}
 				]
@@ -117,7 +120,13 @@
 				"text": "Muito obrigado! Toma aqui um lanche de agradecimento!",
 				"buttons": [
 					{
-						"name": "Finalizar"
+						"name": "Finalizar",
+						"commands": [
+							"/tag @initiator add didia01_et03_Tx07_finalizado",
+							"/function genericos/som_iniciar_missao",
+							"/tag @initiator remove dia01_et02_caminho",
+							"/tag @initiator add dia01_et03_caminho"
+						]
 					}
 				]
 			}
