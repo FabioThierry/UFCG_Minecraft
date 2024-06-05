@@ -9,7 +9,9 @@
 				"buttons": [
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx02"]
+						"commands": [
+							"/dialogue open @e[name=cret1] @e dia01_et06_Tx02"
+						]
 					}
 				]
 			},
@@ -19,8 +21,16 @@
 				"text": "Que legal, eu tenho curiosidade de onde vem os alunos que pretendem fazer o curso!\n\nE sobre a matrícula é importante que você tenha trazido todos os documentos necessários, ok?\n",
 				"buttons": [
 					{
+						"name": "Anterior",
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et06_Tx01"
+						]
+					},
+					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx03"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et06_Tx03"
+						]
 					}
 				]
 			},
@@ -30,8 +40,16 @@
 				"text": "Está tudo aqui, trouxe o RG, CPF, histórico e diploma do ensino médio, comprovante de quitação eleitoral e o comprovante de residência.",
 				"buttons": [
 					{
+						"name": "Anterior",
+						"commands": [
+							"/dialogue open @e[name=cret1] @s dia01_et06_Tx02"
+						]
+					},
+					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx04"]
+						"commands": [
+							"/dialogue open @e[name=cret1] @s dia01_et06_Tx04"
+						]
 					}
 				]
 			},
@@ -42,11 +60,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx03"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et06_Tx03"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx05"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et06_Tx05"
+						]
 					}
 				]
 			},
@@ -57,11 +79,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx04"]
+						"commands": [
+							"/dialogue open @e[name=cret1] @s dia01_et06_Tx04"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx06"]
+						"commands": [
+							"/dialogue open @e[name=cret1] @s dia01_et06_Tx06"
+						]
 					}
 				]
 			},
@@ -72,11 +98,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx05"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et06_Tx05"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et06_Tx07"]
+						"commands": [
+							"/dialogue open @e[name=cret1] @s dia01_et06_Tx07"
+						]
 					}
 				]
 			},
@@ -86,7 +116,13 @@
 				"text": "Para isso, você vai precisar tirar uma cópia do RDM…\n\nExistem algumas papelarias perto da praça de alimentação, lá você pode conseguir tirar sua Xerox.",
 				"buttons": [
 					{
-						"name": "Finalizar"
+						"name": "Finalizar",
+						"commands": [
+							"/tag @initiator add dia01_et06_Tx06_finalizado",
+							"/function genericos/som_iniciar_missao",
+							"/tag @initiator remove dia01_et05_caminho",
+							"/title @initiator title finalizar"
+						]
 					}
 				]
 			}

@@ -10,7 +10,7 @@
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=feirante_3] @s dia01_et05_Tx02"
+							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx02"
 						]
 					}
 				]
@@ -29,7 +29,7 @@
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=feirante_3] @s dia01_et05_Tx03"
+							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx03"
 						]
 					}
 				]
@@ -42,13 +42,13 @@
 					{
 						"name": "Sim",
 						"commands": [
-							"/dialogue open @e[name=feirante_3] @s dia01_et05_Tx04"
+							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx04"
 						]
 					},
 					{
 						"name": "Saber mais",
 						"commands": [
-							"/dialogue open @e[name=feirante_3] @s dia01_et05_Tx04"
+							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx04"
 						]
 					}
 				]
@@ -61,7 +61,7 @@
 					{
 						"name": "Voltar",
 						"commands": [
-							"/dialogue open @e[name=feirante_3] @s dia01_et05_Tx03"
+							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx03"
 						]
 					},
 					{
@@ -83,7 +83,7 @@
 							"/tag @initiator add didia01_et05_Tx05_finalizado",
 							"/function genericos/som_iniciar_missao",
 							"/tag @initiator remove dia01_et04_caminho",
-							"/title @initiator title Finalizou"
+							"/tag @initiator add dia01_et05_caminho"
 						]
 					}
 				]
