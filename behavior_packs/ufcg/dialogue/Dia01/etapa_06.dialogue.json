@@ -10,7 +10,7 @@
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=cret1] @e dia01_et06_Tx02"
+							"/dialogue open @e[name=secrr1] @e dia01_et06_Tx02"
 						]
 					}
 				]
@@ -42,13 +42,13 @@
 					{
 						"name": "Anterior",
 						"commands": [
-							"/dialogue open @e[name=cret1] @s dia01_et06_Tx02"
+							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx02"
 						]
 					},
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=cret1] @s dia01_et06_Tx04"
+							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx04"
 						]
 					}
 				]
@@ -80,13 +80,13 @@
 					{
 						"name": "Anterior",
 						"commands": [
-							"/dialogue open @e[name=cret1] @s dia01_et06_Tx04"
+							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx04"
 						]
 					},
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=cret1] @s dia01_et06_Tx06"
+							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx06"
 						]
 					}
 				]
@@ -105,7 +105,7 @@
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=cret1] @s dia01_et06_Tx07"
+							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx07"
 						]
 					}
 				]
