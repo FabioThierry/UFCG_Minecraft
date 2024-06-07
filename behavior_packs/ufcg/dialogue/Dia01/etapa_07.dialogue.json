@@ -9,7 +9,9 @@
 				"buttons": [
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et07_Tx02"]
+						"commands": [
+							"/dialogue open @e[name=xerox_] @initiator dia01_et07_Tx02"
+						]
 					}
 				]
 			},
@@ -20,11 +22,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et07_Tx01"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et07_Tx01"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et07_Tx03"]
+						"commands": [
+							"/dialogue open @e[name=xerox_] @initiator dia01_et07_Tx03"
+						]
 					}
 				]
 			},
@@ -34,7 +40,10 @@
 				"text": "Aqui está a sua cópia! Se você for tirar a carteirinha de estudante o DCE fica localizado no andar superior do Restaurante Universitário!",
 				"buttons": [
 					{
-						"name": "Finalizar"
+						"name": "Finalizar",
+						"commands": [
+							"/title @initiator title Finalizado"
+						]
 					}
 				]
 			}

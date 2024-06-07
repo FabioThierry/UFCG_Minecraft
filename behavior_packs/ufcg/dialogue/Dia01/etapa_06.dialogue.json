@@ -10,7 +10,7 @@
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=secrr1] @e dia01_et06_Tx02"
+							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx02"
 						]
 					}
 				]
@@ -105,7 +105,7 @@
 					{
 						"name": "Próximo",
 						"commands": [
-							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx07"
+							"/dialogue open @e[name=secrr1] @initiator dia01_et06_Tx07"
 						]
 					}
 				]
@@ -121,7 +121,7 @@
 							"/tag @initiator add dia01_et06_Tx06_finalizado",
 							"/function genericos/som_iniciar_missao",
 							"/tag @initiator remove dia01_et05_caminho",
-							"/title @initiator title finalizar"
+							"/tag @initiator add dia01_et06_caminho"
 						]
 					}
 				]
