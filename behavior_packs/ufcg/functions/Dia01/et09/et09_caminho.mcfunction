@@ -1,0 +1,1 @@
+execute at @a[tag=dia01_et06_caminho] run particle minecraft:endrod

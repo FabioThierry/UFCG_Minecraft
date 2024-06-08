@@ -3,3 +3,4 @@ execute if entity @a[tag=dia01_et02_caminho] run function Dia01/et02/et02_caminh
 execute if entity @a[tag=dia01_et03_caminho] run function Dia01/et03/et03_caminho 
 execute if entity @a[tag=dia01_et04_caminho] run function Dia01/et04/et04_caminho
 execute if entity @a[tag=dia01_et05_caminho] run function Dia01/et05/et05_caminho
+execute if entity @a[tag=dia01_et06_caminho] run function Dia01/et06/et06_caminho

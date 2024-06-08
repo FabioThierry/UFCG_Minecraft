@@ -99,7 +99,10 @@
 					{
 						"name": "Obrigado (a)",
 						"commands": [
-							"/title @initiator title Finalizado"
+							"/tag @initiator add dia01_et08_Tx06_finalizado",
+							"/function genericos/som_iniciar_missao",
+							"/tag @initiator remove dia01_et07_caminho",
+							"/tag @initiator add dia01_et08_caminho"
 						]
 					}
 				]

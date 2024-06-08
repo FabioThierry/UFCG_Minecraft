@@ -42,7 +42,10 @@
 					{
 						"name": "Finalizar",
 						"commands": [
-							"/title @initiator title Finalizado"
+							"/tag @initiator add dia01_et07_Tx03_finalizado",
+							"/function genericos/som_iniciar_missao",
+							"/tag @initiator remove dia01_et06_caminho",
+							"/tag @initiator add dia01_et07_caminho"
 						]
 					}
 				]
