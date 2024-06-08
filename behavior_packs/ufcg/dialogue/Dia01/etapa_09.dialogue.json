@@ -9,7 +9,9 @@
 				"buttons": [
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx02"]
+						"commands": [
+							"/dialogue open @e[name=reporte] @initiator dia01_et09_Tx02"
+						]
 					}
 				]
 			},
@@ -20,11 +22,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx01"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et09_Tx01"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx03"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et09_Tx03"
+						]
 					}
 				]
 			},
@@ -35,11 +41,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx02"]
+						"commands": [
+							"/dialogue open @e[name=reporte] @initiator dia01_et09_Tx02"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx04"]
+						"commands": [
+							"/dialogue open @e[name=reporte] @initiator dia01_et09_Tx04"
+						]
 					}
 				]
 			},
@@ -50,11 +60,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx03"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et09_Tx03"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx05"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et09_Tx05"
+						]
 					}
 				]
 			},
@@ -65,11 +79,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx04"]
+						"commands": [
+							"/dialogue open @e[name=reporte] @initiator dia01_et09_Tx04"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx06"]
+						"commands": [
+							"/dialogue open @e[name=reporte] @initiator dia01_et09_Tx06"
+						]
 					}
 				]
 			},
@@ -80,11 +98,15 @@
 				"buttons": [
 					{
 						"name": "Anterior",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx05"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et09_Tx05"
+						]
 					},
 					{
 						"name": "Próximo",
-						"commands": ["/dialogue open @s @initiator dia01_et09_Tx07"]
+						"commands": [
+							"/dialogue open @initiator @initiator dia01_et09_Tx07"
+						]
 					}
 				]
 			},
@@ -94,7 +116,10 @@
 				"text": "Ok! sem problemas, agora eu vou precisar ir embora pegar o meu ônibus e ir de volta para minha cidade!",
 				"buttons": [
 					{
-						"name": "Finalizar"
+						"name": "Finalizar",
+						"commands": [
+							"/title @initiator title Finalizado"
+						]
 					}
 				]
 			}
