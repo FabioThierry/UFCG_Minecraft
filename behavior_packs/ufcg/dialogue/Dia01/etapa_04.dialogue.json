@@ -1,80 +1,78 @@
 {
-	"format_version": "1.14.0",
-	"minecraft:npc_dialogue": {
-		"scenes": [
-			{
-				"scene_tag": "dia01_et04_Tx01",
-				"npc_name": "Feirante Odete",
-				"text": "Você sabe o que são os alimentos agroecológicos?\nSão alimentos produzidos sem agrotóxicos, principalmente por agricultores familiares.\n",
-				"buttons": [
-					{
-						"name": "Sim",
-						"commands": [
-							"/dialogue open @e[name=feirante_2] @s dia01_et04_Tx02"
-						]
-					},
-					{
-						"name": "Saber mais",
-						"commands": [
-							"/dialogue open @e[name=feirante_2] @s dia01_et04_Tx02"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et04_Tx02",
-				"npc_name": "Feirante Odete",
-				"text": "São alimentos produzidos sem agrotóxicos, principalmente por agricultores familiares.",
-				"buttons": [
-					{
-						"name": "Anterior",
-						"commands": [
-							"/dialogue open @e[name=feirante_2] @s dia01_et04_Tx01"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @initiator @initiator dia01_et04_Tx03"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et04_Tx03",
-				"npc_name": "Estudante",
-				"text": "Uau! Que legal, nem parece que tem 25 anos de existência.",
-				"buttons": [
-					{
-						"name": "Anterior",
-						"commands": [
-							"/dialogue open @e[name=feirante_2] @s dia01_et04_Tx02"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @e[name=feirante_2] @s dia01_et04_Tx04"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et04_Tx04",
-				"npc_name": "Feirante Odete",
-				"text": "Sim, facilitando para quem quer comprar alimentos saudáveis, tanto para quem frequenta a universidade quanto para a comunidade ao redor",
-				"buttons": [
-					{
-						"name": "Finalizar",
-						"commands": [
-							"/tag @initiator add dia01_et04_Tx04_finalizado",
-							"/function genericos/som_iniciar_missao",
-							"/tag @initiator remove dia01_et03_caminho",
-							"/tag @initiator add dia01_et04_caminho"
-						]
-					}
-				]
-			}
-		]
-	}
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "dia01_et04_Tx01",
+        "npc_name": "Feirante Odete",
+        "text": "Você sabe o que são os alimentos agroecológicos?\nSão alimentos produzidos sem agrotóxicos, principalmente por agricultores familiares.\n",
+        "buttons": [
+          {
+            "name": "Sim",
+            "commands": [
+              "/dialogue open @e[name=feirante_2] @initiator dia01_et04_Tx02"
+            ]
+          },
+          {
+            "name": "Saber mais",
+            "commands": [
+              "/dialogue open @e[name=feirante_2] @initiator dia01_et04_Tx02"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et04_Tx02",
+        "npc_name": "Feirante Odete",
+        "text": "São alimentos produzidos sem agrotóxicos, principalmente por agricultores familiares.",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": [
+              "/dialogue open @e[name=feirante_2] @initiator dia01_et04_Tx01"
+            ]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @initiator @initiator dia01_et04_Tx03"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et04_Tx03",
+        "npc_name": "Estudante",
+        "text": "Uau! Que legal, nem parece que tem 25 anos de existência.",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": [
+              "/dialogue open @e[name=feirante_2] @s dia01_et04_Tx02"
+            ]
+          },
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=feirante_2] @s dia01_et04_Tx04"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et04_Tx04",
+        "npc_name": "Feirante Odete",
+        "text": "Sim, facilitando para quem quer comprar alimentos saudáveis, tanto para quem frequenta a universidade quanto para a comunidade ao redor",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": [
+              "/tag @initiator add dia01_et04_finalizado",
+              "/function genericos/som_iniciar_missao",
+              "/tag @initiator remove dia01_et03_caminho",
+              "/tag @initiator add dia01_et04_caminho"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

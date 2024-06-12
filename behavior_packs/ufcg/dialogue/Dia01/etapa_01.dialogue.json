@@ -5,7 +5,7 @@
       {
         "scene_tag": "dia01_et01_Tx01",
         "npc_name": "Estudante",
-        "text": "\nPode me dizer se é aqui a parada da UFCG?",
+        "text": "Olá, motorista!\nPode me dizer se é aqui a parada da UFCG?",
         "buttons": [
           {
             "name": "Próximo",
@@ -51,10 +51,21 @@
           {
             "name": "Finalizar",
             "commands": [
-              "/tag @initiator add dia01_et01_Tx04_finalizado",
-              "/tag @initiator add dia01_et01_caminho",
+              "/tag @initiator add dia01_et01_finalizado",
+              "/tag @initiator add dia01_et01_caminho","/tag @initiator add dia01_iniciado",
               "/function genericos/som_iniciar_missao"
             ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et01_finalizado",
+        "npc_name": "Motorista Carlos",
+        "text": "Disponha... \n\nBoa sorte e se precisar de mais alguma coisa, tamo aí!\n\nSiga o caminho de luzes para chegar a universidade!",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": ["/function genericos/som_iniciar_missao"]
           }
         ]
       }

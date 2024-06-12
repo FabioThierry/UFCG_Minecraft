@@ -115,7 +115,7 @@
           {
             "name": "Beleza",
             "commands": [
-              "/tag @initiator add dia01_et02_Tx08_finalizado",
+              "/tag @initiator add dia01_et02_finalizado",
               "/function genericos/som_iniciar_missao",
               "/tag @initiator remove dia01_et01_caminho",
               "/tag @initiator add dia01_et02_caminho"

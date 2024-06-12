@@ -1,131 +1,111 @@
 {
-	"format_version": "1.14.0",
-	"minecraft:npc_dialogue": {
-		"scenes": [
-			{
-				"scene_tag": "dia01_et06_Tx01",
-				"npc_name": "Estudante",
-				"text": "Bom dia! Estou sim, venho de Umbuzeiro, eu venho bem de longe.",
-				"buttons": [
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx02"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et06_Tx02",
-				"npc_name": "Secretária Maria",
-				"text": "Que legal, eu tenho curiosidade de onde vem os alunos que pretendem fazer o curso!\n\nE sobre a matrícula é importante que você tenha trazido todos os documentos necessários, ok?\n",
-				"buttons": [
-					{
-						"name": "Anterior",
-						"commands": [
-							"/dialogue open @initiator @initiator dia01_et06_Tx01"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @initiator @initiator dia01_et06_Tx03"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et06_Tx03",
-				"npc_name": "Estudante",
-				"text": "Está tudo aqui, trouxe o RG, CPF, histórico e diploma do ensino médio, comprovante de quitação eleitoral e o comprovante de residência.",
-				"buttons": [
-					{
-						"name": "Anterior",
-						"commands": [
-							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx02"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx04"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et06_Tx04",
-				"npc_name": "Secretária Maria",
-				"text": "Ótimo! Vamos resolver o seu caso, só um instante…\n\nAqui está! Esse é o seu Registro de Matrícula o  RDM.",
-				"buttons": [
-					{
-						"name": "Anterior",
-						"commands": [
-							"/dialogue open @initiator @initiator dia01_et06_Tx03"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @initiator @initiator dia01_et06_Tx05"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et06_Tx05",
-				"npc_name": "Estudante",
-				"text": "Uau, muito obrigado(a)!",
-				"buttons": [
-					{
-						"name": "Anterior",
-						"commands": [
-							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx04"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @e[name=secrr1] @s dia01_et06_Tx06"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et06_Tx06",
-				"npc_name": "Secretária Maria",
-				"text": "Pronto! Agora que você está devidamente matriculado.\n\nSe quiser, agora você pode  fazer a sua carteirinha de estudante para pagar meia tarifa em passagem de ônibus e meia entrada em eventos, você pode conseguir a sua no Diretório Central dos Estudantes - DCE.  ",
-				"buttons": [
-					{
-						"name": "Anterior",
-						"commands": [
-							"/dialogue open @initiator @initiator dia01_et06_Tx05"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @e[name=secrr1] @initiator dia01_et06_Tx07"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et06_Tx07",
-				"npc_name": "Secretária Maria",
-				"text": "Para isso, você vai precisar tirar uma cópia do RDM…\n\nExistem algumas papelarias perto da praça de alimentação, lá você pode conseguir tirar sua Xerox.",
-				"buttons": [
-					{
-						"name": "Finalizar",
-						"commands": [
-							"/tag @initiator add dia01_et06_Tx06_finalizado",
-							"/function genericos/som_iniciar_missao",
-							"/tag @initiator remove dia01_et05_caminho",
-							"/tag @initiator add dia01_et06_caminho"
-						]
-					}
-				]
-			}
-		]
-	}
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "dia01_et06_Tx01",
+        "npc_name": "Estudante",
+        "text": "Bom dia! Estou sim, venho de Umbuzeiro, eu venho bem de longe.",
+        "buttons": [
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx02"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et06_Tx02",
+        "npc_name": "Secretária Maria",
+        "text": "Que legal, eu tenho curiosidade de onde vem os alunos que pretendem fazer o curso!\n\nE sobre a matrícula é importante que você tenha trazido todos os documentos necessários, ok?\n",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et06_Tx01"]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @initiator @initiator dia01_et06_Tx03"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et06_Tx03",
+        "npc_name": "Estudante",
+        "text": "Está tudo aqui, trouxe o RG, CPF, histórico e diploma do ensino médio, comprovante de quitação eleitoral e o comprovante de residência.",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx02"]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx04"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et06_Tx04",
+        "npc_name": "Secretária Maria",
+        "text": "Ótimo! Vamos resolver o seu caso, só um instante…\n\nAqui está! Esse é o seu Registro de Matrícula o  RDM.",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et06_Tx03"]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @initiator @initiator dia01_et06_Tx05"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et06_Tx05",
+        "npc_name": "Estudante",
+        "text": "Uau, muito obrigado(a)!",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx04"]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx06"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et06_Tx06",
+        "npc_name": "Secretária Maria",
+        "text": "Pronto! Agora que você está devidamente matriculado.\n\nSe quiser, agora você pode  fazer a sua carteirinha de estudante para pagar meia tarifa em passagem de ônibus e meia entrada em eventos, você pode conseguir a sua no Diretório Central dos Estudantes - DCE.  ",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et06_Tx05"]
+          },
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=secrr1] @initiator dia01_et06_Tx07"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et06_Tx07",
+        "npc_name": "Secretária Maria",
+        "text": "Para isso, você vai precisar tirar uma cópia do RDM…\n\nExistem algumas papelarias perto da praça de alimentação, lá você pode conseguir tirar sua Xerox.",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": [
+              "/tag @initiator add dia01_et06_Tx06_finalizado",
+              "/function genericos/som_iniciar_missao",
+              "/tag @initiator remove dia01_et05_caminho",
+              "/tag @initiator add dia01_et06_caminho"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

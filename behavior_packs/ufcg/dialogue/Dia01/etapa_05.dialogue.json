@@ -1,93 +1,89 @@
 {
-	"format_version": "1.14.0",
-	"minecraft:npc_dialogue": {
-		"scenes": [
-			{
-				"scene_tag": "dia01_et05_Tx01",
-				"npc_name": "Estudante",
-				"text": "Nossa, você vem de bem longe!",
-				"buttons": [
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx02"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et05_Tx02",
-				"npc_name": "Feirante Antonio",
-				"text": "Isso é comum, a maioria dos feirantes são de municípios que fazem parte do cinturão agrícola, principalmente do brejo paraibano.",
-				"buttons": [
-					{
-						"name": "Anterior",
-						"commands": [
-							"/dialogue open @initiator @initiator dia01_et05_Tx01"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx03"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et05_Tx03",
-				"npc_name": "Feirante Antonio",
-				"text": "Você conhece o brejo?",
-				"buttons": [
-					{
-						"name": "Sim",
-						"commands": [
-							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx04"
-						]
-					},
-					{
-						"name": "Saber mais",
-						"commands": [
-							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx04"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et05_Tx04",
-				"npc_name": "Feirante Antonio",
-				"text": "O brejo paraibano é considerado um brejo de altitude, é uma região que apresenta um clima ameno devido a sua altitude de 500 a 700 metros acima do mar.",
-				"buttons": [
-					{
-						"name": "Voltar",
-						"commands": [
-							"/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx03"
-						]
-					},
-					{
-						"name": "Próximo",
-						"commands": [
-							"/dialogue open @initiator @initiator dia01_et05_Tx05"
-						]
-					}
-				]
-			},
-			{
-				"scene_tag": "dia01_et05_Tx05",
-				"npc_name": "Estudante",
-				"text": "Que massa, irei pesquisar mais!",
-				"buttons": [
-					{
-						"name": "Finalizar",
-						"commands": [
-							"/tag @initiator add didia01_et05_Tx05_finalizado",
-							"/function genericos/som_iniciar_missao",
-							"/tag @initiator remove dia01_et04_caminho",
-							"/tag @initiator add dia01_et05_caminho"
-						]
-					}
-				]
-			}
-		]
-	}
+  "format_version": "1.14.0",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "dia01_et05_Tx01",
+        "npc_name": "Estudante",
+        "text": "Nossa, você também! Eu venho de Umbuzeiro... saí bem cedinho de casa.",
+        "buttons": [
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx02"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et05_Tx02",
+        "npc_name": "Feirante Antonio",
+        "text": "Pois é... Eu tive que preparar todas as minhas mercadorias desde cedo, a maioria dos feirantes são de municípios que fazem parte do cinturão agrícola, principalmente do brejo paraibano.",
+        "buttons": [
+          {
+            "name": "Anterior",
+            "commands": ["/dialogue open @initiator @initiator dia01_et05_Tx01"]
+          },
+          {
+            "name": "Próximo",
+            "commands": [
+              "/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx03"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et05_Tx03",
+        "npc_name": "Feirante Antonio",
+        "text": "Você conhece o brejo?",
+        "buttons": [
+          {
+            "name": "Sim",
+            "commands": [
+              "/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx04"
+            ]
+          },
+          {
+            "name": "Saber mais",
+            "commands": [
+              "/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx04"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et05_Tx04",
+        "npc_name": "Feirante Antonio",
+        "text": "O brejo paraibano é considerado um brejo de altitude, é uma região que apresenta um clima ameno devido a sua altitude de 500 a 700 metros acima do mar.",
+        "buttons": [
+          {
+            "name": "Voltar",
+            "commands": [
+              "/dialogue open @e[name=ferr3] @initiator dia01_et05_Tx03"
+            ]
+          },
+          {
+            "name": "Próximo",
+            "commands": ["/dialogue open @initiator @initiator dia01_et05_Tx05"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et05_Tx05",
+        "npc_name": "Estudante",
+        "text": "Que massa, irei pesquisar mais!",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": [
+              "/tag @initiator add didia01_et05_Tx05_finalizado",
+              "/function genericos/som_iniciar_missao",
+              "/tag @initiator remove dia01_et04_caminho",
+              "/tag @initiator add dia01_et05_caminho"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

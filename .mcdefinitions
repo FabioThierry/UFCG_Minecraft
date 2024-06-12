@@ -1,6 +1,17 @@
-tag=dia01_et01_caminho
+## Dia iniciado
+tag=dia01_iniciado
+
+## Dia finalizado
+
 tag=dia01_finalizado
-tag=dia01_et01_Tx04_finalizado
+
+#### etapas finalizadas
+
+tag=dia01_et01_finalizado
+tag=dia01_et02_finalizado
+tag=dia01_et03_finalizado
+
+tag=dia01_et01_caminho
 tag=dia01_et02_Tx08_finalizado
 tag=dia01_et02_caminho
 tag=dia01_et03_Tx07_finalizado
@@ -18,3 +29,6 @@ tag=dia01_et08_Tx06_finalizado
 tag=dia01_et08_caminho
 tag=dia01_et09_caminho
 tag=dia01_et09_Tx07_finalizado
+
+
+tag=dia01_et03_caminho_ajuda
