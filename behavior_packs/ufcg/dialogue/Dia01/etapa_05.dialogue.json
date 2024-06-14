@@ -76,11 +76,22 @@
           {
             "name": "Finalizar",
             "commands": [
-              "/tag @initiator add didia01_et05_Tx05_finalizado",
+              "/tag @initiator add dia01_et05_finalizado",
               "/function genericos/som_iniciar_missao",
               "/tag @initiator remove dia01_et04_caminho",
               "/tag @initiator add dia01_et05_caminho"
             ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et05_finalizado",
+        "npc_name": "Feirante Antonio",
+        "text": "Ahh você novamente, aproveite a feirinha!",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": []
           }
         ]
       }

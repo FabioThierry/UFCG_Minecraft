@@ -9,7 +9,9 @@
         "buttons": [
           {
             "name": "Próximo",
-            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx02"]
+            "commands": [
+              "/dialogue open @e[name=secretaria_CH] @s dia01_et06_Tx02"
+            ]
           }
         ]
       },
@@ -35,11 +37,15 @@
         "buttons": [
           {
             "name": "Anterior",
-            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx02"]
+            "commands": [
+              "/dialogue open @e[name=secretaria_CH] @s dia01_et06_Tx02"
+            ]
           },
           {
             "name": "Próximo",
-            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx04"]
+            "commands": [
+              "/dialogue open @e[name=secretaria_CH] @s dia01_et06_Tx04"
+            ]
           }
         ]
       },
@@ -65,18 +71,22 @@
         "buttons": [
           {
             "name": "Anterior",
-            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx04"]
+            "commands": [
+              "/dialogue open @e[name=secretaria_CH] @s dia01_et06_Tx04"
+            ]
           },
           {
             "name": "Próximo",
-            "commands": ["/dialogue open @e[name=secrr1] @s dia01_et06_Tx06"]
+            "commands": [
+              "/dialogue open @e[name=secretaria_CH] @s dia01_et06_Tx06"
+            ]
           }
         ]
       },
       {
         "scene_tag": "dia01_et06_Tx06",
         "npc_name": "Secretária Maria",
-        "text": "Pronto! Agora que você está devidamente matriculado.\n\nSe quiser, agora você pode  fazer a sua carteirinha de estudante para pagar meia tarifa em passagem de ônibus e meia entrada em eventos, você pode conseguir a sua no Diretório Central dos Estudantes - DCE.  ",
+        "text": "Pronto! Agora que você está devidamente matriculado.\n\nSe quiser, agora você pode  fazer a sua carteirinha de estudante para pagar meia tarifa em passagem de ônibus e meia entrada em eventos, você pode conseguir a sua no §6Diretório Central dos Estudantes - DCE§r.  ",
         "buttons": [
           {
             "name": "Anterior",
@@ -85,7 +95,7 @@
           {
             "name": "Próximo",
             "commands": [
-              "/dialogue open @e[name=secrr1] @initiator dia01_et06_Tx07"
+              "/dialogue open @e[name=secretaria_CH] @initiator dia01_et06_Tx07"
             ]
           }
         ]
@@ -98,11 +108,23 @@
           {
             "name": "Finalizar",
             "commands": [
-              "/tag @initiator add dia01_et06_Tx06_finalizado",
+              "/tag @initiator add dia01_et06_finalizado",
               "/function genericos/som_iniciar_missao",
               "/tag @initiator remove dia01_et05_caminho",
               "/tag @initiator add dia01_et06_caminho"
             ]
+          }
+        ]
+      },
+
+      {
+        "scene_tag": "dia01_et06_finalizado",
+        "npc_name": "Secretária Maria",
+        "text": "Já está tudo certo com a sua papelada... Se você quiser tirar a carteirinha vai precisar tirar uma cópia do RDM…\n\nExistem algumas papelarias perto da praça de alimentação, lá você pode conseguir tirar sua Xerox.",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": ["/function genericos/som_iniciar_missao"]
           }
         ]
       }

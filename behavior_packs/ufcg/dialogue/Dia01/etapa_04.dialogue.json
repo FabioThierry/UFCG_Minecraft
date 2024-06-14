@@ -72,6 +72,17 @@
             ]
           }
         ]
+      },
+      {
+        "scene_tag": "dia01_et04_finalizado",
+        "npc_name": "Feirante Odete",
+        "text": "Ahh você novamente, aproveite a feirinha!",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": []
+          }
+        ]
       }
     ]
   }

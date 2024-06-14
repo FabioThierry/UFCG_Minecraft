@@ -111,9 +111,13 @@
           {
             "name": "Finalizar",
             "commands": [
+              "/give @initiator[tag=!dia01_et03_finalizado] apple 2",
               "/tag @initiator add dia01_et03_finalizado",
-              "/give @initiator apple 2",
-              "/tag @initiator add dia01_et03_caminho"
+              "/clear @initiator[hasitem={item=fence,quantity=3..}] fence 0 3",
+              "/function genericos/som_iniciar_missao",
+
+              "/tag @initiator add dia01_et03_caminho",
+              "/tag @initiator remove dia01_et03_caminho_ajuda"
             ]
           }
         ]
@@ -125,13 +129,7 @@
         "buttons": [
           {
             "name": "Finalizar",
-            "commands": [
-              "/tag @initiator add dia01_et03_finalizado",
-              "/clear @initiator[hasitem={item=fence,quantity=3..}] fence 0 3",
-              "/give @initiator[tag=!dia01_et03_finalizado] apple 2",
-              "/tag @initiator add dia01_et03_caminho",
-              "/tag @initiator remove dia01_et03_caminho_ajuda"
-            ]
+            "commands": []
           }
         ]
       }

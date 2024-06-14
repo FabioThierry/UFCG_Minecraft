@@ -52,7 +52,8 @@
             "name": "Finalizar",
             "commands": [
               "/tag @initiator add dia01_et01_finalizado",
-              "/tag @initiator add dia01_et01_caminho","/tag @initiator add dia01_iniciado",
+              "/tag @initiator add dia01_et01_caminho",
+              "/tag @initiator add dia01_iniciado",
               "/function genericos/som_iniciar_missao"
             ]
           }
@@ -66,6 +67,31 @@
           {
             "name": "Finalizar",
             "commands": ["/function genericos/som_iniciar_missao"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_final",
+        "npc_name": "Motorista Carlos",
+        "text": "Que bom que você conseguiu resolver todas as suas pendências...\n\nAgora vamos voltar para nossa cidade!\n\n Quem sabe você pode explorar a universidade outro dia.",
+        "buttons": [
+          {
+            "name": "Ir embora",
+            "commands": [
+              "/function genericos/som_iniciar_missao",
+              "/tp @initiator 73 75 258",
+              "/tag @initiator remove dia01_et01_finalizado",
+              "/tag @initiator remove dia01_et02_finalizado",
+              "/tag @initiator remove dia01_et03_finalizado",
+              "/tag @initiator remove dia01_et04_finalizado",
+              "/tag @initiator remove dia01_et05_finalizado",
+              "/tag @initiator remove dia01_et06_finalizado",
+              "/tag @initiator remove dia01_et07_finalizado",
+              "/tag @initiator remove dia01_et08_finalizado",
+              "/tag @initiator remove dia01_et09_finalizado",
+              "/tag @initiator remove dia01_et09_caminho",
+              "/tag @initiator remove dia01_iniciado"
+            ]
           }
         ]
       }
