@@ -116,6 +116,7 @@
               "/clear @initiator[hasitem={item=fence,quantity=3..}] fence 0 3",
               "/function genericos/som_iniciar_missao",
               "/function genericos/scoreboard_update",
+              "/setblock -151 65 212 minecraft:stone",
               "/tag @initiator add dia01_et03_caminho",
               "/tag @initiator remove dia01_et03_caminho_ajuda"
             ]

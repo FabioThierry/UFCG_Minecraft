@@ -68,6 +68,9 @@
               "/tag @initiator add dia01_et04_finalizado",
               "/function genericos/som_iniciar_missao",
               "/tag @initiator remove dia01_et03_caminho",
+              "/tag @initiator remove dia01_et02_caminho",
+              "/tag @initiator remove dia01_et01_caminho",
+              "/setblock -159 65 211 minecraft:stone",
               "/tag @initiator add dia01_et04_caminho",
               "/function genericos/scoreboard_update"
             ]

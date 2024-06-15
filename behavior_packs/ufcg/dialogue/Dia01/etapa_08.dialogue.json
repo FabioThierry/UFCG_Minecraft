@@ -94,6 +94,12 @@
               "/tag @initiator add dia01_et08_finalizado",
               "/function genericos/som_iniciar_missao",
               "/tag @initiator remove dia01_et07_caminho",
+              "/tag @initiator remove dia01_et06_caminho",
+              "/tag @initiator remove dia01_et05_caminho",
+              "/tag @initiator remove dia01_et04_caminho",
+              "/tag @initiator remove dia01_et02_caminho",
+              "/tag @initiator remove dia01_et01_caminho",
+              "/setblock -21 64 82 minecraft:stone",
               "/tag @initiator add dia01_et08_caminho",
               "/function genericos/scoreboard_update"
             ]
@@ -104,6 +110,17 @@
         "scene_tag": "dia01_et08_finalizado",
         "npc_name": "Larissa - DCE",
         "text": "Acho que já deu tudo certo com a sua carteirinha, agora é só aproveitar!",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": ["/function genericos/som_iniciar_missao"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et08_alerta",
+        "npc_name": "Larissa - DCE",
+        "text": "Você deveria tirar a xerox do seu RDM...",
         "buttons": [
           {
             "name": "Finalizar",

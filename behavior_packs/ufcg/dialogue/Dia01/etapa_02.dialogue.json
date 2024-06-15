@@ -117,6 +117,7 @@
             "commands": [
               "/tag @initiator add dia01_et02_finalizado",
               "/function genericos/som_iniciar_missao",
+              "/setblock -67 66 240 minecraft:stone",
               "/structure load MapasUFCG -65 67 239 0_degrees none true false false 0.00",
               "/tag @initiator remove dia01_et01_caminho",
               "/tag @initiator add dia01_et02_caminho",
