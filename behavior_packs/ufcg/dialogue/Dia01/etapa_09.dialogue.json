@@ -109,8 +109,7 @@
               "/tag @initiator add dia01_et09_finalizado",
               "/function genericos/som_iniciar_missao",
               "/tag @initiator remove dia01_et08_caminho",
-              "/tag @initiator add dia01_et09_caminho",
-              "/function genericos/scoreboard_update"
+              "/tag @initiator add dia01_et09_caminho"
             ]
           }
         ]

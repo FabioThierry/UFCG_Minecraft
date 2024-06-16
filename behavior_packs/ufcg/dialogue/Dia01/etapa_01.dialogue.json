@@ -54,7 +54,7 @@
               "/tag @initiator add dia01_et01_finalizado",
               "/tag @initiator add dia01_et01_caminho",
               "/tag @initiator add dia01_iniciado",
-              "/function genericos/scoreboard_update"
+              "/function genericos/som_iniciar_missao"
             ]
           }
         ]
