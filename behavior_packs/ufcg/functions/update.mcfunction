@@ -20,7 +20,7 @@ titleraw @a[tag=dia01_et05_caminho] actionbar {"rawtext":[{"text": "          Fa
 titleraw @a[tag=dia01_et06_caminho] actionbar {"rawtext":[{"text": "    Fale com a \n§6Gerlinda da Xerox§r"}]}
 titleraw @a[tag=dia01_et07_caminho] actionbar {"rawtext":[{"text": "   Fale com a \n§6Larissa do DCE§r"}]}
 titleraw @a[tag=dia01_et08_caminho] actionbar {"rawtext":[{"text": "Veja o que está acontecendo no §6coreto§r mais próximo"}]}
-titleraw @a[tag=dia01_et09_caminho] actionbar {"rawtext":[{"text": "Volte para o §6Ônibus§r"}]}
+titleraw @a[tag=dia01_et09_caminho,tag=dia01_et08_finalizado] actionbar {"rawtext":[{"text": "Volte para o §6Ônibus§r"}]}
 
 
 
