@@ -1,5 +1,3 @@
-1. Correção do resetbeacons
-2. Etapa 7 precisa da tag da etapa 6
 3. Criar e Adicionar Quadros para o Quarto
 4. Adicionar Mapa Mundi no quarto
 5. Criar um sala separada para Quando o jogador terminar o dia 1

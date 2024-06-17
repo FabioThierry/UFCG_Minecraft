@@ -101,7 +101,7 @@
               "/tag @initiator remove dia01_et01_caminho",
               "/setblock -21 64 82 minecraft:stone",
               "/execute if entity @p[tag=dia01_et07_finalizado, r=5] run tag @p add dia01_et08_caminho",
-
+              "/setblock -65 63 144 minecraft:air",
               "/function genericos/scoreboard_update"
             ]
           }

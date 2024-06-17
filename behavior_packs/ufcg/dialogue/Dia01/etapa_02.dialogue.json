@@ -121,7 +121,8 @@
               "/structure load MapasUFCG -65 67 239 0_degrees none true false false 0.00",
               "/tag @initiator remove dia01_et01_caminho",
               "/tag @initiator add dia01_et02_caminho",
-              "/function genericos/scoreboard_update"
+              "/function genericos/scoreboard_update",
+              "/setblock -151 65 212 minecraft:air"
             ]
           },
           {

@@ -84,7 +84,8 @@
               "/tag @initiator remove dia01_et03_caminho",
               "/tag @initiator add dia01_et05_caminho",
               "/setblock -167 65 210 minecraft:stone",
-              "/function genericos/scoreboard_update"
+              "/function genericos/scoreboard_update",
+              "/setblock -262 63 181 minecraft:air"
             ]
           }
         ]

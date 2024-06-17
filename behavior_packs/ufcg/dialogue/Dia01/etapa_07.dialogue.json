@@ -50,7 +50,8 @@
               "/tag @initiator remove dia01_et01_caminho",
               "/tag @initiator add dia01_et07_caminho",
               "/setblock -216 59 126 minecraft:stone",
-              "/function genericos/scoreboard_update"
+              "/function genericos/scoreboard_update",
+              "/setblock -21 64 82 minecraft:air"
             ]
           }
         ]
@@ -59,6 +60,17 @@
         "scene_tag": "dia01_et07_finalizado",
         "npc_name": "Gerlinda da Xerox",
         "text": "Já esta tudo certo com a sua Xerox! Se você for tirar a carteirinha de estudante o §6DCE§r fica localizado no andar superior do §6Restaurante Universitário!§r",
+        "buttons": [
+          {
+            "name": "Finalizar",
+            "commands": ["/function genericos/som_iniciar_missao"]
+          }
+        ]
+      },
+      {
+        "scene_tag": "dia01_et07_alerta",
+        "npc_name": "Gerlinda da Xerox",
+        "text": "Ahh! quer tirar a xerox do seu RDM?\nEntão você deve pegar o RDM original quando realizar a matrícula.",
         "buttons": [
           {
             "name": "Finalizar",

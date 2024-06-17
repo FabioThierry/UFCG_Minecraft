@@ -118,7 +118,8 @@
               "/function genericos/scoreboard_update",
               "/setblock -151 65 212 minecraft:stone",
               "/tag @initiator add dia01_et03_caminho",
-              "/tag @initiator remove dia01_et03_caminho_ajuda"
+              "/tag @initiator remove dia01_et03_caminho_ajuda",
+              "/setblock -159 65 211 minecraft:air"
             ]
           }
         ]

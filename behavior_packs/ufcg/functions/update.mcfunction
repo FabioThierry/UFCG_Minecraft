@@ -31,3 +31,9 @@ execute at @a[tag=dia01_et03_caminho_ajuda] run particle minecraft:endrod -149 6
 execute at @a[tag=dia01_et03_caminho_ajuda] run particle minecraft:endrod -145 66.6 217
 execute at @a[tag=dia01_et03_caminho_ajuda] run particle minecraft:endrod -142 66.6 217
 execute at @a[tag=dia01_et03_caminho_ajuda] run particle minecraft:endrod -151 66.6 216
+
+
+## reset beacons
+#execute if entity @a[tag=!dia01_iniciado] run say olar
+execute positioned -216 59 126 if entity @a[tag=!dia01_iniciado] run setblock -216 59 126 minecraft:air
+#execute positioned -65 63 144 if  run setblock -21 64 82 minecraft:air
