@@ -87,7 +87,7 @@
       {
         "scene_tag": "dia01_et03_Tx06",
         "npc_name": "Feirante Clodoaldo",
-        "text": "Preciso que você crie na §2Bancada de Trabalho§r uma §2cerca§r com aqueles materiais que estão dentro do baú ao lado do caminhão azul. Depois de feita me entregue para que eu possa melhorar a minha barraca!",
+        "text": "Preciso que você crie na §2Bancada de Trabalho§r três §2cercas§r com aqueles materiais que estão dentro do baú ao lado do caminhão azul. Depois de feita me entregue para que eu possa melhorar a minha barraca!",
         "buttons": [
           {
             "name": "Anterior",
@@ -106,7 +106,7 @@
       {
         "scene_tag": "dia01_et03_Tx07",
         "npc_name": "Feirante Clodoaldo",
-        "text": "Muito obrigado! Toma aqui um lanche de agradecimento!",
+        "text": "Muito obrigado! Toma  2x §l§4Maçã§r de agradecimento!",
         "buttons": [
           {
             "name": "Finalizar",
@@ -114,7 +114,9 @@
               "/give @initiator[tag=!dia01_et03_finalizado] apple 2",
               "/tag @initiator add dia01_et03_finalizado",
               "/clear @initiator[hasitem={item=fence,quantity=3..}] fence 0 3",
-              "/function genericos/som_iniciar_missao",
+              "/function genericos/som_finalizar_missao",
+              "/function genericos/scoreboard_update",
+              "/setblock -151 65 212 minecraft:stone",
               "/tag @initiator add dia01_et03_caminho",
               "/tag @initiator remove dia01_et03_caminho_ajuda"
             ]

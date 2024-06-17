@@ -41,7 +41,7 @@
             "name": "Finalizar",
             "commands": [
               "/tag @initiator add dia01_et07_finalizado",
-              "/function genericos/som_iniciar_missao",
+              "/function genericos/som_finalizar_missao",
               "/tag @initiator remove dia01_et06_caminho",
               "/tag @initiator remove dia01_et05_caminho",
               "/tag @initiator remove dia01_et04_caminho",

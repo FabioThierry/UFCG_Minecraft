@@ -1,0 +1,1 @@
+playsound minecraft:quest_complete @initiator ~ ~ ~

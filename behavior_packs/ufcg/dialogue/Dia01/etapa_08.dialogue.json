@@ -92,7 +92,7 @@
             "name": "Obrigado (a)",
             "commands": [
               "/tag @initiator add dia01_et08_finalizado",
-              "/function genericos/som_iniciar_missao",
+              "/function genericos/som_finalizar_missao",
               "/tag @initiator remove dia01_et07_caminho",
               "/tag @initiator remove dia01_et06_caminho",
               "/tag @initiator remove dia01_et05_caminho",
@@ -100,7 +100,8 @@
               "/tag @initiator remove dia01_et02_caminho",
               "/tag @initiator remove dia01_et01_caminho",
               "/setblock -21 64 82 minecraft:stone",
-              "/tag @initiator add dia01_et08_caminho",
+              "/execute if entity @p[tag=dia01_et07_finalizado, r=5] run tag @p add dia01_et08_caminho",
+
               "/function genericos/scoreboard_update"
             ]
           }

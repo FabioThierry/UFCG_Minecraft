@@ -54,7 +54,7 @@
       {
         "scene_tag": "dia01_et02_Tx04",
         "npc_name": "Professor Alberto",
-        "text": "Ah, e aqui está um §2mapa§r do campus para facilitar sua vida. Você sabe ler um §2mapa§r?",
+        "text": "Ah, e aqui está dois §2mapas§r do campus para facilitar sua vida. Você sabe ler um §2mapa§r?",
         "buttons": [
           {
             "name": "Eu sei",
@@ -110,15 +110,18 @@
       {
         "scene_tag": "dia01_et02_Tx08",
         "npc_name": "Professor Alberto",
-        "text": "Não há de quê. Boa sorte e aproveite sua jornada na §1UFCG§r! Não se esqueça de pegar o seu §2mapa§r e parar na §6feirinha§r.",
+        "text": "Não há de quê. Boa sorte e aproveite sua jornada na §1UFCG§r! Não se esqueça de pegar os seus §2mapas§r e parar na §6feirinha§r.",
         "buttons": [
           {
             "name": "Beleza",
             "commands": [
               "/tag @initiator add dia01_et02_finalizado",
-              "/function genericos/som_iniciar_missao",
+              "/function genericos/som_finalizar_missao",
+              "/setblock -67 66 240 minecraft:stone",
+              "/structure load MapasUFCG -65 67 239 0_degrees none true false false 0.00",
               "/tag @initiator remove dia01_et01_caminho",
-              "/tag @initiator add dia01_et02_caminho"
+              "/tag @initiator add dia01_et02_caminho",
+              "/function genericos/scoreboard_update"
             ]
           },
           {

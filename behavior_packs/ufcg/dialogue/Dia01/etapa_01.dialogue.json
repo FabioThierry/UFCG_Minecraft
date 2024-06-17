@@ -50,14 +50,7 @@
         "buttons": [
           {
             "name": "Finalizar",
-            "commands": [
-              "/tag @initiator add dia01_et01_finalizado",
-              "/tag @initiator add dia01_et01_caminho",
-              "/tag @initiator add dia01_iniciado",
-              "/function genericos/som_iniciar_missao",
-              "/structure load portaovazio -29 70 256 0_degrees none block_by_block ",
-              "/function genericos/scoreboard_update"
-            ]
+            "commands": ["/function Dia01/et01/et01_motorista_comandos_final"]
           }
         ]
       },
@@ -80,8 +73,8 @@
           {
             "name": "Ir embora",
             "commands": [
-              "/function genericos/som_iniciar_missao",
-              "/tp @initiator 73 75 258",
+              "/function genericos/som_finalizar_missao",
+              "/tp @initiator -65.5 57 -2507.5",
               "/tag @initiator remove dia01_et01_finalizado",
               "/tag @initiator remove dia01_et02_finalizado",
               "/tag @initiator remove dia01_et03_finalizado",
@@ -92,7 +85,8 @@
               "/tag @initiator remove dia01_et08_finalizado",
               "/tag @initiator remove dia01_et09_finalizado",
               "/tag @initiator remove dia01_et09_caminho",
-              "/tag @initiator remove dia01_iniciado"
+              "/tag @initiator remove dia01_iniciado",
+              "/tag @initiator add dia01_finalizado"
             ]
           }
         ]

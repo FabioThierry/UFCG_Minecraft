@@ -1,0 +1,25 @@
+{
+  "format_version": "1.20.20",
+  "sound_definitions": {
+    "minecraft:quest_taken": {
+      "sounds": [
+        {
+          "name": "sounds/fx/quest_taken",
+          "is3D": false,
+          "volume": 1,
+          "pitch": 1
+        }
+      ]
+    },
+    "minecraft:quest_complete": {
+      "sounds": [
+        {
+          "name": "sounds/fx/quest_complete",
+          "is3D": false,
+          "volume": 1,
+          "pitch": 1
+        }
+      ]
+    }
+  }
+}

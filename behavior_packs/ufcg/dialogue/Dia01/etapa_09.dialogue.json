@@ -107,10 +107,10 @@
             "name": "Finalizar",
             "commands": [
               "/tag @initiator add dia01_et09_finalizado",
-              "/function genericos/som_iniciar_missao",
+              "/function genericos/som_finalizar_missao",
               "/tag @initiator remove dia01_et08_caminho",
               "/setblock -65 63 144 minecraft:stone",
-              "/execute if entity @initiator[tag=dia01_et08_finalizado] run tag @initiator add dia01_et09_caminho",
+              "/execute if entity @p[tag=dia01_et08_finalizado, r=5] run tag @p add dia01_et09_caminho",
               "/function genericos/scoreboard_update"
             ]
           }
