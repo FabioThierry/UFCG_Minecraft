@@ -8,6 +8,7 @@ clear @a[r=6]
 # tp @a[r=5] -26.5 70 258.5 90 0
 structure load livro_att -26.5 70 258.5 0_degrees none true false false 0.00
 say §6Verifique o livro §1Metas do Dia
+time set 0
 tag @a[r=6] remove em_casa
 function genericos/resetbeacons
 function genericos/scoreboard_update
