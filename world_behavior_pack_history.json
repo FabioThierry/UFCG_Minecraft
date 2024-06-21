@@ -1,10 +1,1 @@
-{
-    "packs": [
-        {
-            "can_be_redownloaded": false,
-            "name": "UFCG Pacote de comportamento",
-            "uuid": "b3d1661a-06cf-49cc-b05e-480433aa21e9",
-            "version": [1, 0, 0]
-        }
-    ]
-}
+{"packs":[{"can_be_redownloaded":false,"name":"UFCG Pacote de comportamento","uuid":"b3d1661a-06cf-49cc-b05e-480433aa21e9","version":[1,0,0]},{"can_be_redownloaded":false,"name":{"en_US":"Deco BP"},"uuid":"fd6101c1-ee1b-4f0f-85e4-43a9fc302bf1","version":[1,0,0]}]}

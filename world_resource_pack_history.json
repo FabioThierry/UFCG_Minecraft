@@ -1,10 +1,1 @@
-{
-    "packs": [
-        {
-            "can_be_redownloaded": false,
-            "name": "UFCG Pacote de recursos",
-            "uuid": "18a77556-b84f-478c-a1aa-17b5599dbc1a",
-            "version": [1, 0, 0]
-        }
-    ]
-}
+{"packs":[{"can_be_redownloaded":false,"name":"UFCG Pacote de recursos","uuid":"18a77556-b84f-478c-a1aa-17b5599dbc1a","version":[1,0,0]},{"can_be_redownloaded":false,"name":{"en_US":"Deco RP"},"uuid":"294d22da-3cd6-4fac-9381-eea31c4ca19e","version":[1,0,0]}]}
