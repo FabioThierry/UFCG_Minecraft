@@ -86,7 +86,8 @@
               "/tag @initiator remove dia01_et09_finalizado",
               "/tag @initiator remove dia01_et09_caminho",
               "/tag @initiator remove dia01_iniciado",
-              "/tag @initiator add dia01_finalizado"
+              "/tag @initiator add dia01_finalizado",
+              "/tag @initiator add livre"
             ]
           }
         ]

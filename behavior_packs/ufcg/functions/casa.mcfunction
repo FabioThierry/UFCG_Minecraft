@@ -1,0 +1,1 @@
+execute if entity @a[tag=livre,r=4] run function genericos/resetday1
