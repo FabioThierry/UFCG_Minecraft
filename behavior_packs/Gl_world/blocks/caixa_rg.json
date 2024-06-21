@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "mb:caixa_rg"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.caixa_rg",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mb_caixa_rg",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					11,
+					8,
+					10
+				]
+			}
+		}
+	}
+}

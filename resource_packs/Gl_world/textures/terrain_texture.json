@@ -1,0 +1,35 @@
+{
+	"num_mip_levels": 4,
+	"padding": 8,
+	"resource_pack_name": "Deco",
+	"texture_name": "atlas.terrain",
+	"texture_data": {
+		"mb_globo": {
+			"textures": "textures/blocks/globo_ph"
+		},
+		"mb_monitor": {
+			"textures": "textures/blocks/monitor"
+		},
+		"mb_cadeira": {
+			"textures": "textures/blocks/cadeira"
+		},
+		"mb_cadeira_plastico": {
+			"textures": "textures/blocks/cadeira_plastico"
+		},
+		"mb_mesa_plastico": {
+			"textures": "textures/blocks/mesa_plastico"
+		},
+		"mb_caixa_rg": {
+			"textures": "textures/blocks/caixa_rg"
+		},
+		"mb_livro": {
+			"textures": "textures/blocks/book"
+		},
+		"mb_engenheiro_placa": {
+			"textures": "textures/blocks/engenheiro"
+		},
+		"mb_quadro_uf": {
+			"textures": "textures/blocks/quadro_uf"
+		}
+	}
+}

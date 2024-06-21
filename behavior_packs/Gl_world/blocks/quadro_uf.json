@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "mb:quadro_uf"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.quadro_uf",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mb_quadro_uf",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-6,
+					0,
+					7
+				],
+				"size": [
+					12,
+					11,
+					1
+				]
+			}
+		}
+	}
+}

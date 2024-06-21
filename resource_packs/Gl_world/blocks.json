@@ -1,0 +1,43 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"mb:globo": {
+		"sound": "stone",
+		"textures": "mb_globo"
+	},
+	"mb:monitor": {
+		"sound": "stone",
+		"textures": "mb_monitor"
+	},
+	"mb:cadeira": {
+		"sound": "stone",
+		"textures": "mb_cadeira"
+	},
+	"mb:cadeira_plastico": {
+		"sound": "stone",
+		"textures": "mb_cadeira_plastico"
+	},
+	"mb:mesa_plastico": {
+		"sound": "stone",
+		"textures": "mb_mesa_plastico"
+	},
+	"mb:caixa_rg": {
+		"sound": "stone",
+		"textures": "mb_caixa_rg"
+	},
+	"mb:livro": {
+		"sound": "stone",
+		"textures": "mb_livro"
+	},
+	"mb:engenheiro_placa": {
+		"sound": "stone",
+		"textures": "mb_engenheiro_placa"
+	},
+	"mb:quadro_uf": {
+		"sound": "stone",
+		"textures": "mb_quadro_uf"
+	}
+}

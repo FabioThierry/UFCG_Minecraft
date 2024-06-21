@@ -1,0 +1,29 @@
+{
+	"format_version": "1.19.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "mb:mesa_plastico"
+		},
+		"components": {
+			"minecraft:geometry": "geometry.mesa_plastico",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "mb_mesa_plastico",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-6,
+					0,
+					-12
+				],
+				"size": [
+					17,
+					12,
+					20
+				]
+			}
+		}
+	}
+}

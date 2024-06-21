@@ -1,0 +1,11 @@
+pack.name=Deco RP
+pack.description=
+tile.mb:globo.name=Globo Terrestre
+tile.mb:monitor.name=Monitor
+tile.mb:cadeira.name=Cadeira
+tile.mb:cadeira_plastico.name=Cadeira de plastico
+tile.mb:mesa_plastico.name=Mesa de Plastico
+tile.mb:caixa_rg.name=Caixa Registradora
+tile.mb:livro.name=Livro
+tile.mb:engenheiro_placa.name=Placa engenheiro
+tile.mb:quadro_uf.name=Quadro UFCG

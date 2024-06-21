@@ -1,0 +1,44 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"Hasmegcas"
+		]
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			20,
+			10
+		],
+		"uuid": "294d22da-3cd6-4fac-9381-eea31c4ca19e",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "d1f34053-dea6-4abb-ba72-0cc35b9baa50",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "fd6101c1-ee1b-4f0f-85e4-43a9fc302bf1",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}
